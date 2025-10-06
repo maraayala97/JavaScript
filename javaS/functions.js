@@ -13,34 +13,31 @@ function agregarcarrito() {
         while (compra !=='F');
     }
 
+
+
     function calculototal() {
-        compra = "";
-        total = 0;
-        switch (compra) {
-            case 'A':
+  let total = 0; 
 
-            total = total + 1200;
-            Console.log ("Tu total hasta el momento es de:" + total);    
-            break;
-            case 'B':
+  for (let i = 0; i < carrito.length; i++) {
+    switch (carrito[i]) {
+      case "A":
+        total = total + 1200;
+        break;
+      case "B":
+        total = total + 2500;
+        break;
+      case "C":
+        total = total + 3500;
+        break;
+      case "D":
+        total += 4500;
+        break;
+      case "E":
+        total = total + 4500;
+        break;
+    }
+  }
 
-            total = total + 2500;
-            Console.log ("Tu total hasta el momento es de:" + total);    
-            break;
-            case 'C':
-
-            total = total + 3500;
-            Console.log ("Tu total hasta el momento es de:" + total);    
-            break;
-            case 'D':
-
-            total = total + 4500;
-            Console.log ("Tu total hasta el momento es de:" + total);    
-            break;
-            case 'E':
-
-            total = total + 4500;
-            Console.log ("Tu total hasta el momento es de:" + total);
-            break;       
-        }  
-    } while (compra != 'F');
+  return total;
+}
+   

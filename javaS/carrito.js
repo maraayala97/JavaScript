@@ -13,8 +13,11 @@ switch (primerasopciones) {
             prodseleccionados = prompt('Hasta el momento tienes ' + carrito.length + ' productos seleccionados\n Precione X para continuar')
             console.log (carrito.join(', '))
     
-    if (prodseleccionados == 'X') {
-        alert('El total a pagar es de: ' + calculototal());
+    if (prodseleccionados = 'X') {
+
+    let resultado = calculototal()
+        alert('El total a pagar es de: ' + resultado)
+        console.log('El total a pagar es de: ' + resultado);
     }
     break;
            case '2': 
