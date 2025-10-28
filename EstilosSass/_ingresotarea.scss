@@ -86,3 +86,10 @@ header {
             .botonagregartarea {
                 grid-area: botonagregartarea;
             }
+
+ul li{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
