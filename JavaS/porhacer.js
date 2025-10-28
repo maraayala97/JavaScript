@@ -1,3 +1,5 @@
+
+
 let nuevatarea = document.getElementById("titulotarea");
 let resumentarea = document.getElementById("tareainput");
 let lista = document.getElementById("hacerlista");
@@ -31,3 +33,4 @@ let botonagregar = document.getElementById("agregarboton");
 botonagregar.addEventListener("click", creartarea);
 
 
+// falta hacer modificaciones en el html para poder indicar cuando la tarea esta finalizada y a partir de ahi hacer el JS para finalizar 

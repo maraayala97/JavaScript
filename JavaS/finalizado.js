@@ -1,0 +1,1 @@
+// El plan seria tomar la tarea , indicarla como finalizada , que esto se guarde por un tiempo ahi , pero pasado ese tiempo se borre 
