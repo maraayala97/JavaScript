@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planificador</title>
+  <link rel="stylesheet" href="./css/compilacionEstilos.css" />
 </head>
 <body>
-<script src="./javaS/variables.js"></script>
- <script src="./javaS/functions.js"></script> 
- <script src="./javaS/carrito.js"></script>  
+  <header>
+    <h1 class="tituloh1">Planificador de Tareas</h1>
+  </header>
+
+  <main>
+    <div id="task-planner" class="divplanner">
+      <div class="ingresotarea">
+        <h2>Nueva tarea</h2>
+
+        <label for="titulotarea" class="labeltitulo">Título</label>
+        <input type="text" placeholder="Ingrese título" id="titulotarea" class="ingresartitulo" />
+
+        <label for="tareainput" class="labelresumentarea">Resumen de tarea</label>
+        <input type="text" id="tareainput" placeholder="Ingrese una tarea" class="ingresartarea" />
+
+        <button id="agregarboton" class="botonagregartarea" type="button">Agregar Tarea</button>
+      </div>
+
+      <div class="listadotarea">
+        <h2>Por hacer</h2>
+        <ul id="hacerlista" class="listaporhacer">
+            
+        </ul>
+      </div>
+
+      <div class="realizado">
+        <h2>Finalizado</h2>
+        <ul id="finalizadolista"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+
+
+  <script src="./JavaS/login.js"></script>
+  <script src="./JavaS/nuevatarea.js"></script>
+  <script src="./JavaS/porhacer.js"></script>
+  <script src="./JavaS/finalizado.js"></script>
 </body>
 </html>
